@@ -8,7 +8,7 @@ This was created as a solution to an interview code test.
 Author
 ------
 David Williams
-June 2013
+June 11, 2013
 
 Files
 -----
