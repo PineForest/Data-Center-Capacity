@@ -42,18 +42,18 @@ public class DataCenterCapacity {
     private static final int REQUESTS_PER_SECOND_PER_MACHINE_GROUP = 100;
 
     public static void main(String[] args) {
-        if (args.length == 0) {
-            final DataCenterInstancesReader<UniqueVersionsDataCenterInstances> dataCenterInstancesReader = new
-                    StandardInDataCenterInstancesReader<UniqueVersionsDataCenterInstances>();
+        if (args.length > 0) {
+            final DataCenterInstancesReader<UniqueVersionsDataCenterInstances> dataCenterInstancesReader
+                    = new FileDataCenterInstancesReader<UniqueVersionsDataCenterInstances>(args[args.length - 1]);
             final DataCenterInstances dataCenterInstances = dataCenterInstancesReader.read(
-                              UniqueVersionsDataCenterInstances.class);
+                    UniqueVersionsDataCenterInstances.class);
             dataCenterInstances.calculateTotalUsableMachineGroups();
             System.out.println(dataCenterInstances.calculateTotalUsableMachineGroups() *
                     REQUESTS_PER_SECOND_PER_MACHINE_GROUP);
         } else {
             System.out.println("Invalid input. Expected command line is:");
             System.out.println();
-            System.out.println("  java -jar DataCenterCapacityCodeTest.jar < INPUTFILE");
+            System.out.println("  java -jar Data-Center-Capacity-V1.jar INPUTFILE");
             System.out.println();
         }
     }
