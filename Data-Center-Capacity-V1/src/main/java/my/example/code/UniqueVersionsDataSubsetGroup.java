@@ -8,7 +8,7 @@ import java.util.Set;
  * Implementation of {@link DataSubsetGroup} that maintains the set of unique versions found in this data subset and
  * the count of machine instances that are using each of these versions.
  * <p/>
- * @author David Williams (david.k.williams@gmail.com)
+ * @author David Williams (davidkwilliams@yahoo.com)
  * @since 6/11/2013
  */
 public class UniqueVersionsDataSubsetGroup implements DataSubsetGroup {

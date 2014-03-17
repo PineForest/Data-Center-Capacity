@@ -16,7 +16,7 @@ import java.util.concurrent.ConcurrentHashMap;
  * reducing the creation and release of numerous duplicate instances for the same version. This will reduce memory
  * usage as well as garbage in the heap.
  * <p/>
- * @author David Williams (david.k.williams@gmail.com)
+ * @author David Williams (davidkwilliams@yahoo.com)
  * @since 6/11/2013
  */
 public class DataSubsetVersion implements Comparable<DataSubsetVersion> {

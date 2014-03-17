@@ -5,7 +5,7 @@ package my.example.code;
  * subset (spans machine groups). It is intended that each implementation of this interface provide a new strategy for
  * how the subset data is stored and manipulated in a performant way.
  * <p/>
- * @author David Williams (david.k.williams@gmail.com)
+ * @author David Williams (davidkwilliams@yahoo.com)
  * @since 6/11/2013
  */
 public interface DataSubsetGroup {

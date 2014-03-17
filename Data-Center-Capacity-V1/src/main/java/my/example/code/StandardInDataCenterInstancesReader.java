@@ -7,7 +7,7 @@ import java.util.*;
 /**
  * Implementation of a set of behaviors used for reading in data center capacity data from standard input.
  * <p/>
- * @author David Williams (david.k.williams@gmail.com)
+ * @author David Williams (davidkwilliams@yahoo.com)
  * @since 6/11/2013
  */
 public class StandardInDataCenterInstancesReader<D extends DataCenterInstances> implements

@@ -5,7 +5,7 @@ package my.example.code;
  * (M) the data describes. It is intended that each implementation of this interface provide a new strategy for
  * how the data is stored and calculated in a performant way.
  * <p/>
- * @author David Williams (david.k.williams@gmail.com)
+ * @author David Williams (davidkwilliams@yahoo.com)
  * @since 6/11/2013
  */
 public interface DataCenterInstances {

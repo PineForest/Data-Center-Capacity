@@ -4,7 +4,7 @@ package my.example.code;
  * Describes a set of behaviors used for reading in data center capacity data. It is intended that each implementation
  * of this interface provide a new strategy for reading in data center capacity data in a performant way.
  * <p/>
- * @author David Williams (david.k.williams@gmail.com)
+ * @author David Williams (davidkwilliams@yahoo.com)
  * @since 6/11/2013
  */
 public interface DataCenterInstancesReader<D extends DataCenterInstances> {

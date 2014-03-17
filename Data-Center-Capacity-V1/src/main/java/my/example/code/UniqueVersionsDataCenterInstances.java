@@ -8,7 +8,7 @@ import java.util.List;
  * (M) the data describes. The strategy used by this implementation is to use {@link UniqueVersionsDataSubsetGroup}
  * instances for the {@link DataSubsetGroup} behaviors.
  * <p/>
- * @author David Williams (david.k.williams@gmail.com)
+ * @author David Williams (davidkwilliams@yahoo.com)
  * @since 6/11/2013
  */
 public class UniqueVersionsDataCenterInstances implements DataCenterInstances {

@@ -35,7 +35,7 @@ package my.example.code;
  *     be huge.</li>
  * </ul>
  *
- * @author David Williams (david.k.williams@gmail.com)
+ * @author David Williams (davidkwilliams@yahoo.com)
  * @since 6/11/2013
  */
 public class DataCenterCapacity {
@@ -48,9 +48,14 @@ public class DataCenterCapacity {
             final DataCenterInstances dataCenterInstances = dataCenterInstancesReader.read(
                     UniqueVersionsDataCenterInstances.class);
             dataCenterInstances.calculateTotalUsableMachineGroups();
-            System.out.println(dataCenterInstances.calculateTotalUsableMachineGroups() *
-                    REQUESTS_PER_SECOND_PER_MACHINE_GROUP);
+            System.out.println();
+            System.out.println("----------------");
+            System.out.println("Result: The capacity is " + dataCenterInstances.calculateTotalUsableMachineGroups()
+                    * REQUESTS_PER_SECOND_PER_MACHINE_GROUP);
+            System.out.println("----------------");
+            System.out.println();
         } else {
+            System.out.println();
             System.out.println("Invalid input. Expected command line is:");
             System.out.println();
             System.out.println("  java -jar Data-Center-Capacity-V1.jar INPUTFILE");
