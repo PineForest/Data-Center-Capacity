@@ -25,10 +25,26 @@ Files
 
 Usage
 -----
-On the command line enter:
 
-        java -jar Data-Center-Capacity-V1.jar input.txt
+1. Open command shell
+2. cd to the module folder (e.g. Data-Center-Capacity-V1)
+3. To build enter:
 
-                  OR
+        mvn package
 
-        mvn package exec:exec
+            OR
+
+        mvn jar:jar
+
+4. To build and run enter:
+
+        mvn exec:exec
+
+            OR
+
+        mvn verify
+
+Tool Versions
+-------------
+Maven: 3.2.1
+Java Runtime and SDK: 1.7.0_51
