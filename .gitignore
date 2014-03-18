@@ -4,7 +4,8 @@
 
 *.iml
 .idea/
-out/production/
+target/
+javadocs/
 
 #################
 ## Eclipse

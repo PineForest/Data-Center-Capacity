@@ -43,10 +43,10 @@ public class DataCenterCapacity {
 
     public static void main(String[] args) {
         if (args.length > 0) {
-            final DataCenterInstancesReader<UniqueVersionsDataCenterInstances> dataCenterInstancesReader
-                    = new FileDataCenterInstancesReader<UniqueVersionsDataCenterInstances>(args[args.length - 1]);
+            final DataCenterInstancesReader<MultisetsDataCenterInstances> dataCenterInstancesReader
+                    = new FileDataCenterInstancesReader<MultisetsDataCenterInstances>(args[args.length - 1]);
             final DataCenterInstances dataCenterInstances = dataCenterInstancesReader.read(
-                    UniqueVersionsDataCenterInstances.class);
+                    MultisetsDataCenterInstances.class);
             dataCenterInstances.calculateTotalUsableMachineGroups();
             System.out.println();
             System.out.println("----------------");
@@ -58,7 +58,7 @@ public class DataCenterCapacity {
             System.out.println();
             System.out.println("Invalid input. Expected command line is:");
             System.out.println();
-            System.out.println("  java -jar data-center-capacity-v1.jar INPUTFILE");
+            System.out.println("  java -jar data-center-capacity-v2.jar INPUTFILE");
             System.out.println();
         }
     }
