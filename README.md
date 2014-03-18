@@ -3,32 +3,29 @@ Data Center Capacity
 
 Purpose
 -------
-This was created as a solution to coding test for a job application.
+This was originally created as a solution to a job interview coding test.
 
 Author
 ------
 David Williams
 June 11, 2013
 
+Note
+----
+This is a Java project which builds with Maven. See "Usage" and "Tool Versions" at the end.
+
 Directories
 -----------
-Assets - cross version assets
-Data-Center-Capacity-V1 - the original version
-
-Files
------
-+ "Assets\Data Center Capacity Exercise.pdf" - the document I was given that describes what to write
-+ Assets\input.txt - a sample input file to test the code. Produces the output "300"
-+ Data-Center-Capacity-V1\target\artifacts\Data-Center-Capacity-V1.jar - contains the compiled Java byte code
-+ Data-Center-Capacity-V1\target\artifacts\Data-Center-Capacity-V1-javadocs.jar - contains the JavaDocs for this project
-+ Data-Center-Capacity-V1\target\artifacts\Data-Center-Capacity-V1-sources.jar - contains the source files for this project
+assets - cross version assets, including a document with a description of the problem being solved
+data-center-capacity-v1 - the original version which uses a custom class specific to the problem and which borrows on multiset concepts
+data-center-capacity-v2 - updated version which uses Google's Multiset implementation
+parent - contains the parent Maven POM file for all versions
 
 Usage
 -----
-
-1. Open command shell
-2. cd to the module folder (e.g. Data-Center-Capacity-V1)
-3. To build enter:
+1. Open the command shell
+2. cd to the module folder (e.g. data-center-capacity-v1)
+3. To build, execute:
 
         mvn package
 
@@ -36,13 +33,13 @@ Usage
 
         mvn jar:jar
 
-4. To build and run enter:
+4. To build and run, execute:
 
-        mvn exec:exec
+        mvn verify
 
             OR
 
-        mvn verify
+        mvn exec:exec
 
 Tool Versions
 -------------
