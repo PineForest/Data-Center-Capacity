@@ -1,11 +1,16 @@
 #################
+## Generated Assets
+#################
+
+target/
+javadocs/
+
+#################
 ## IntelliJ
 #################
 
 *.iml
 .idea/
-target/
-javadocs/
 
 #################
 ## Eclipse
