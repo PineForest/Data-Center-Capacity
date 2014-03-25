@@ -143,6 +143,7 @@
                         <executable>java.exe</executable>
                         <workingDirectory>${basedir}/target/artifacts</workingDirectory>
                         <arguments>
+                            <argument>-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005</argument>
                             <argument>-jar</argument>
                             <argument>${project.artifactId}.jar</argument>
                             <argument>${basedir}\..\Assets\input.txt</argument>

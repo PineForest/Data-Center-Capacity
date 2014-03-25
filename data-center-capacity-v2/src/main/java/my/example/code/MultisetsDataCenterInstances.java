@@ -1,7 +1,7 @@
 package my.example.code;
 
 import com.google.common.collect.Multiset;
-import com.google.common.collect.TreeMultiset;
+import com.google.common.collect.HashMultiset;
 
 import java.util.*;
 
@@ -71,7 +71,7 @@ public class MultisetsDataCenterInstances implements DataCenterInstances {
             if (0 == dataSubsetIndex) {
                 dataSubsetMultisets = new ArrayList<Multiset<Integer>>(totalDataSubsets);
             }
-            dataSubsetMultiset = TreeMultiset.<Integer>create();
+            dataSubsetMultiset = HashMultiset.<Integer>create();
             dataSubsetMultisets.add(dataSubsetMultiset);
         } else {
             dataSubsetMultiset = dataSubsetMultisets.get(dataSubsetIndex);
@@ -87,7 +87,7 @@ public class MultisetsDataCenterInstances implements DataCenterInstances {
         if (null == dataSubsetMultisets) {
             return 0;
         }
-        final Multiset<Integer> dataSubsetMultisetsIntersection = TreeMultiset.<Integer>create();
+        final Multiset<Integer> dataSubsetMultisetsIntersection = HashMultiset.<Integer>create();
         for (final Multiset<Integer> dataSubsetMultiset : dataSubsetMultisets) {
             if (dataSubsetMultisetsIntersection.isEmpty()) {
                 dataSubsetMultisetsIntersection.addAll(dataSubsetMultiset);
